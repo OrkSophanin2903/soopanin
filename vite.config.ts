@@ -6,10 +6,11 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [
     vue(),
-    vueDevTools(),
+    // Only load devtools when running the dev server — never ship it in a build.
+    ...(command === 'serve' ? [vueDevTools()] : []),
     tailwindcss(),
   ],
   resolve: {
@@ -17,4 +18,8 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-})
+  build: {
+    // Don't ship source maps — they'd expose your original source structure.
+    sourcemap: false,
+  },
+}))
