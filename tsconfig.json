@@ -7,5 +7,12 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    // Mirrors the `@` alias from tsconfig.app.json so the shadcn-vue CLI, which
+    // reads this root config, can validate the import alias when adding components.
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
