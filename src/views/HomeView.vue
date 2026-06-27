@@ -17,20 +17,20 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col gap-8">
-    <div class="flex flex-col gap-1">
-      <div class="text-2xl font-bold">sophanin ork</div>
-      <div class="text-xs text-gray-500">outdoor, coding, running, athlete, and officer</div>
+    <div class="flex flex-col gap-2">
+      <div class="text-3xl font-bold">sophanin ork</div>
+      <div class="text-sm text-gray-700">outdoor, coding, running, athlete, and officer</div>
     </div>
 
-    <div class="text-xs gap-2 flex flex-col">
+    <div class="text-sm gap-2 flex flex-col">
       <div class="flex gap-x-1">
         <span class="font-bold">currently:</span>
-        <span class="text-gray-500">senior hrms developer</span>
+        <span class="text-gray-700">senior hrms developer</span>
       </div>
       <div class="flex gap-x-1">
         <span class="font-bold">location:</span>
-        <span class="text-gray-500">Phnom Penh, Cambodia</span>
-        <span class="text-gray-500"
+        <span class="text-gray-700">Phnom Penh, Cambodia</span>
+        <span class="text-gray-700"
           ><a
             href="//24timezones.com/Phnom-Penh/time"
             style="text-decoration: none"
@@ -45,35 +45,36 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="flex flex-col gap-2 text-xs">
+    <div class="flex flex-col gap-2 text-sm">
       <CommonLink to="/careers">careers</CommonLink>
       <CommonLink to="/projects">projects</CommonLink>
+      <CommonLink to="/projects">resume</CommonLink>
     </div>
 
-    <div class="flex flex-col gap-3">
+    <div class="flex flex-col gap-4">
       <a
         href="mailto:sophanin11t@gmail.com"
-        class="w-fit text-xs text-gray-500 hover:text-gray-950 transition-opacity duration-300"
+        class="w-fit text-sm text-gray-700 hover:text-gray-950 transition-opacity duration-300"
       >
         sophanin11t@gmail.com
       </a>
 
       <div class="flex gap-x-4">
         <CommonSocialLink
-          href="https://www.linkedin.com/in/USERNAME"
+          href="https://www.linkedin.com/in/sophanin-ork-956b671ba"
           label="LinkedIn"
           color="#0A66C2"
         >
           <LinkedinIcon />
         </CommonSocialLink>
-        <CommonSocialLink href="https://github.com/USERNAME" label="GitHub" color="#181717">
+        <CommonSocialLink href="https://github.com/OrkSophanin2903" label="GitHub" color="#181717">
           <GithubIcon />
         </CommonSocialLink>
-        <CommonSocialLink href="https://x.com/USERNAME" label="X" color="#000000">
+        <CommonSocialLink href="https://x.com/nin81157456" label="X" color="#000000">
           <XIcon />
         </CommonSocialLink>
         <CommonSocialLink
-          href="https://www.strava.com/athletes/USERNAME"
+          href="https://www.strava.com/athletes/153258611"
           label="Strava"
           color="#FC4C02"
         >
